@@ -168,6 +168,7 @@ header{
   background-image: linear-gradient(rgba(151, 151, 151, 0.308), rgba(204, 204, 204, 0.445)),url(img/hero.jpg);
   background-size: cover;
   background-position: center;
+  background-attachment: fixed;
   height: 100vh
 }
 .hero-text-box{
@@ -303,6 +304,8 @@ header{
 /*Testamonials*/
 /*------------------------------------------------*/
 .section-testimonials{
-  background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),url(img/back-customers.jpg);
+background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),url(img/back-customers.jpg);
 background-size: cover;
+color:white;
+background-attachment: fixed;
 }
