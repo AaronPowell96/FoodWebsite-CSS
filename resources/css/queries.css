@@ -1,10 +1,79 @@
 /*Big tablet to 1200px*/
 @media only screen and (max-width: 1200px){
-
+  .hero-text-box{
+    position:absolute;
+    width: 100%;
+    padding: 0 2%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+  .row{
+    padding: 0 2%;
+  }
 }
 /*Tablets*/
 @media only screen and (max-width: 1023px){
-
+body{
+  font-size: 18px;
+}
+section{
+  padding: 60px 0;
+}
+.row p.long{
+  line-height: 145%;
+  width: 80%;
+  margin-left: 10%;
+  margin-bottom: 30px;
+}
+.steps-box{
+  margin-top: 10px;
+}
+.steps-box:last-child{
+  margin-top: 10px;
+}
+.works-steps{
+  margin-top: 40px;
+}
+.works-step:last-of-type{
+  margin-bottom: 60px;
+}
+.app-screen{
+  width: 50%;
+}
+.icon-small{
+  width: 15px;
+  margin-right: 5px;
+}
+.city-features{
+  font-size: 90%;
+}
+.plan-box{
+  width: 100%;
+  margin-left: 0%;
+}
+.plan-price{
+  font-size: 250%;
+}
+.contact-form{
+  width: 80%;
+}
+}
+/*Inbetween to keep city features online*/
+@media only screen and (max-width: 813px){
+  .icon-small{
+    width: 13px;
+    margin-right: 2px;
+  }
+}
+@media only screen and (max-width: 790px){
+  .icon-small{
+    width: 13px;
+    margin-right: 2px;
+  }
+  .city-features{
+    font-size: 85%;
+  }
 }
 /*normal phones*/
 @media only screen and (max-width: 767px){
