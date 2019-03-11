@@ -114,6 +114,13 @@ h2:after{
   width: auto;
   float: left;
 }
+.logo-black{
+  display: none;
+height: 50px;
+width: auto;
+float: left;
+margin: 5px 0;
+}
 /* -----BUTTONS-----*/
 .btn:link,
 .btn:visited,
@@ -197,6 +204,8 @@ header{
   float: left;
   margin-top: 20px;
 }
+
+/*MAIN NAV*/
 .main-nav{
   float:right;
   list-style: none;
@@ -222,6 +231,46 @@ header{
 .main-nav li a:hover{
   border-bottom: 2px solid #e67e22;
 }
+
+/* MOBILE NAV */
+.mobile-nav-icon{
+  float:right;
+  margin-top: 30px;
+  cursor: pointer;
+  display: none;
+}
+.mobile-nav-icon i{
+  font-size: 200%;
+  color: #fff;
+}
+/* STICKY NAV */
+.sticky{
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: rgba(255, 255, 255, 0.877);
+  box-shadow: 0 2px 2px rgb(238, 238, 238);
+  z-index: 9999;
+}
+
+.sticky .main-nav{
+  margin-top: 18px;
+}
+
+.sticky .main-nav li a:link,
+.sticky .main-nav li a:visited{
+  padding: 16px 0;
+  color: #555;
+}
+.sticky .main-nav li a:active,
+.sticky .main-nav li a:hover{
+  border-bottom: 2px solid #e67e22;
+}
+
+.sticky .logo{display:none;}
+.sticky .logo-black{display:block;}
+
 /*------------------------------------------------*/
 /*Meals*/
 /*------------------------------------------------*/
@@ -506,3 +555,22 @@ footer p{
   margin-top: 20px;
 }
 
+/*------------------------------------------------*/
+/*Animations*/
+/*------------------------------------------------*/
+
+.js--wp-1,
+.js--wp-2,
+.js--wp-3,
+{
+  opacity: 0;
+  animation-duration: 1s;
+}
+.js--wp-4{
+  animation-duration: 1s;
+}
+.js--wp-1.animated,
+.js--wp-3.animated,
+.js--wp-2.animated{
+opacity: 1;
+}

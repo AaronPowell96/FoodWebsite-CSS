@@ -11,6 +11,7 @@
   <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
   <link rel="stylesheet" href="resources/css/style.css">
   <link rel="stylesheet" href="resources/css/queries.css">
+  <link rel="stylesheet" href="vendors/css/animate.css">
   <title>Omnifood</title>
 </head>
 
@@ -19,30 +20,35 @@
     <nav>
       <div class="row">
         <img class="logo" src="/resources/css/img/logo-white.png" alt="logo">
+        <img class="logo-black" src="/resources/css/img/logo.png" alt="logo black">
         <ul class="main-nav">
           <li>
-            <a href=#>Food Delivery</a>
+            <a href='#foodDelivery'>Food Delivery</a>
           </li>
           <li>
-            <a href=#>How it words</a>
+            <a href='#works'>How it works</a>
           </li>
           <li>
-            <a href=#>Our cities</a>
+            <a href='#cities'>Our cities</a>
           </li>
           <li>
-            <a href=#>Sign Up</a>
+            <a href='#signUp'>Sign Up</a>
           </li>
         </ul>
+        <a href="" class="mobile-nav-icon">
+          <i class="ion-navicon-round"></i>
+        </a>
       </div>
     </nav>
     <div class="hero-text-box">
       <h1>Goodbye junk food.</br> Hello super healthy meals.</h1>
-      <a class="btn btn-full" href="#">I'm Hungry</a>
-      <a class="btn btn-ghost" href="#">Show me more</a>
+      <a class="btn btn-full hungryBtn" href="#">I'm Hungry</a>
+      <a class="btn btn-ghost showmeBtn" href="#">Show me more</a>
     </div>
   </header>
 
-  <section class="section-features">
+  <section id="foodDelivery" class="section-features">
+
     <div class="row">
       <h2>Get food fast &mdash; not fast food.</h2>
       <p class="col span-3-of-4 long">
@@ -52,7 +58,7 @@
       </p>
     </div>
 
-    <div class="row">
+    <div class="row js--wp-1">
       <div class="col span-1-of-4 box">
         <i class="ion-ios-infinite-outline icon-big"></i>
         <h3>Up to 365 days/year</h3>
@@ -135,13 +141,13 @@
       </li>
     </ul>
   </section>
-  <section class="section-steps">
+  <section id="works" class="section-steps">
     <div class="row">
       <h2>How it works &mdash; Simple as 1, 2, 3</h2>
     </div>
     <div class="row">
       <div class="col span-1-of-2 steps-box">
-        <img class="app-screen" src="resources/css/img/app-iPhone.png" alt="iphone app" srcset="">
+        <img class="app-screen js--wp-2" src="resources/css/img/app-iPhone.png" alt="iphone app" srcset="">
       </div>
       <div class="col span-1-of-2 steps-box">
         <div class="works-step">
@@ -165,11 +171,11 @@
       </div>
     </div>
   </section>
-  <section class="section-cities">
+  <section id="cities" class="section-cities">
     <div class="row">
       <h2>We're currently in these cities</h2>
     </div>
-    <div class="row">
+    <div class="row js--wp-3">
       <div class="col span-1-of-4 box">
         <img src="resources/css/img/lisbon-3.jpg" alt="Lisbon" srcset="">
         <h3>Lisbon</h3>
@@ -269,13 +275,13 @@
   </section>
 
 
-  <section class="section-plans">
+  <section id="signUp" class="section-plans">
     <div class="row">
       <h2>Start eating healthy today</h2>
     </div>
     <div class="row">
       <div class="col span-1-of-3">
-        <div class="plan-box">
+        <div class="plan-box js--wp-4">
           <div>
             <h3>Premium</h3>
             <p class="plan-price">$399
@@ -312,7 +318,7 @@
           <div>
             <ul>
               <li>
-                <i class="ion-ios-checkmark-empty icon-small"></i>1 meal every day</li>
+                <i class="ion-ios-checkmark-empty icon-small"></i>1 meal 10 days/month</li>
               <li>
                 <i class="ion-ios-checkmark-empty icon-small"></i>Order 24/7</li>
               <li>
@@ -468,9 +474,13 @@
       <p>Copyright &copy; 2019 by Omnifood. All rights reserved.</p>
     </div>
   </footer>
+  <script src="http://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+    crossorigin="anonymous"></script>
   <script src="https://cdn.jsdelivr.net/npm/respond@0.9.0/main.min.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/html5shiv@3.7.3/dist/html5shiv.min.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/selectivizr@1.0.3/selectivizr.min.js"></script>
+  <script src="vendors/js/waypoints.js"></script>
+  <script src="resources/js/scripts.js"></script>
 </body>
 
 </html>
